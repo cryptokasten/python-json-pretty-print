@@ -1,0 +1,27 @@
+#+TITLE: Pretty print JSON in Python
+#+TAGS: cryptokasten, python, json, pretty-print
+#+PROPERTY: header-args:sh :session *shell python-json-pretty-print sh* :results silent raw
+#+OPTIONS: ^:nil
+
+[[https://github.com/cryptokasten][file:https://img.shields.io/badge/dynamic/json.svg?url=https://api.github.com/users/cryptokasten&label=Cryptokasten&query=$.public_repos]]
+
+** System environment
+
+- Python 3.8.0
+
+** JSON pretty print
+
+#+BEGIN_SRC sh :exports results both :results replace code
+echo '{"json":"obj"}' | python -m json.tool
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC sh
+{
+    "json": "obj"
+}
+#+END_SRC
+
+** References
+
+1. https://docs.python.org/3/library/json.html
