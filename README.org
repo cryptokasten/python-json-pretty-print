@@ -11,7 +11,7 @@
 
 ** JSON pretty print
 
-#+BEGIN_SRC sh :exports results both :results replace code
+#+BEGIN_SRC sh :exports both :results replace code
 echo '{"json":"obj"}' | python -m json.tool
 #+END_SRC
 
